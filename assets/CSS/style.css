@@ -8,7 +8,7 @@
     --gradient-white:#eddebf86;
     --gradient-blue:#19587d;
     --gradient-red:#8900092a;
-    --grey-color:#c4c4c4;
+    --grey-color:#888383d3;
     --black-color:#000000;
     --white-color:#ffffff;
 }
@@ -81,7 +81,7 @@ header {
     margin: 0 auto;
     padding-top: 200px;
 }
-.texte, .btn, .para {
+.texte, .btn {
     font-family: 'Space Grotesk';
     font-size: 23.5px;
     font-weight: 300;
@@ -123,6 +123,11 @@ header {
 .para {
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: justify;
+    width: 90%;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: 300;
 }
 /*Arrière plan du nemesis*/
 .nemesis {
@@ -140,6 +145,17 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
+    margin: 20px 0;
+}
+.legende {
+    padding-top: 30px;
+}
+.allies {
+    display: flex;
+    justify-content: space-between;
+}
+.photo {
+    margin-top: 40px;
 }
 .figure h3 {
     font-family: 'rajdhani';
@@ -148,6 +164,93 @@ header {
 .figure p {
     text-align: center;
 }
+/*style du multimedia*/
+.multimedia {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
+    padding: 40px;
+}
+.multi-texte {
+    width: 50%;
+    padding: 20px;
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-blue));
+    border-radius: 10px;
+}
+.multi-content {
+    display: flex;
+    justify-content: center;
+}
+#multimedia {
+    padding: 40px;
+    margin: 40px;
+}
+.fleche-2 {
+    height: 30%;
+    padding-top: 100px;
+}
+.bathome-ba {
+    padding-top: 50px;
+}
+/*style du formulaire*/
+
+#formulaire {
+    background-color: var(--grey-color);
+    height: 600px;
+    text-align: justify center;
+    padding: 30px 300px;
+}
+#formulaire h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+#formulaire label h3 {
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#formulaire .simple {
+    padding-bottom: 20px;
+}
+/*style du citation*/
+
+.citation {
+    background-color: var(--black-color);
+    height: 400px;
+    padding: 60px 100px;
+}
+.citation p {
+    text-align: center;
+    padding-top: 20px;
+}
+.citation .icone-1 {
+    margin-left: 200px;
+}
+.citation .icone-2 {
+    display: block;
+    margin-left: 850px;
+}
+/*style footer*/
+#pied {
+    height: 200px;
+}
+#pied .text-pied {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#pied .logo {
+    text-align: center;
+}
+#pied .logo a {
+    margin: 10px;
+}
+
+
+
 
 
 
