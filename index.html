@@ -157,13 +157,13 @@
               <div id="multimedia">
                   <h2>MULTIMEDIA</h2>
                   <div class="multimedia">
-                      <img class='fleche-2' src="./assets/Logos/icon_flèche_1.png">
+                          <img class='fleche-2' src="./assets/Logos/icon_flèche_1.png">
                       <div class="multi-content">
                           <img src="assets/Illustrations/Bathome_ba1.png">
                           <div class="multi-texte">
                               <h2>ACTION, ADVENTURE</h2>
                               <h3>Batman Begins</h3>
-                              <p>IMDB:<span>8.2</span></p>
+                              <p>IMDB:<span class="jaune">8.2</span></p>
                               <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
                               traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
                               guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
@@ -171,7 +171,7 @@
                               la lutte contre le crime sous le nom de Batman.</p>
                           </div>
                         </div>
-                      <img class='fleche-2' src="./assets/Logos/icon_flèche_2.png">
+                        <img class='fleche-2' src="./assets/Logos/icon_flèche_2.png">
                   </div>
                   <div>
                       <img class='bathome-ba' src="assets/Illustrations/Bathome_ba2.png">
@@ -187,19 +187,30 @@
                   <label for="sujet"><h3>NEWSLETTER</h3></label>
                   <label class="simple">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
                   Batman :</label><input type="checkbox" value="Batman"><br>
-                  <div>
-                      <select>
+                  <div class="option">
+                    <span class="label-simp">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                    <span class="icon">
+                        <img src="./assets/Logos/icon_flèche_2.png">
+                    </span>
+                      <!--<select>
                           <option value="disabled select hidden">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
                           <option value="1-par-semaine">Une fois par semaine</option>
                           <option value="2-par-semaine">Une fois toutes les deux semaines</option>
                           <option value="1-par-mois">Une fois par mois</option>
                           <option value="3-par-mois">Une fois tous les trois mois</option>
                           <option value="6-par-mois">Une fois tous les six mois</option>
-                      </select>
+                      </select>-->
                   </div>
                   <br>
-                  <input type="text" name="text" id="text" placeholder="Souhaitez-vous recevoir des news"><br>
-                  <button type="menu">Des films</button> <button type="menu">Des comics</button> <button type="menu">De tout</button>
+                  <label class="label-simp" for="choix">Souhaitez-vous recevoir des</label>
+                  <div class="btn-groupe">
+                    <input type="radio" id="film">
+                    <label for="film">Des Films</label>
+                    <input type="radio" id="comics">
+                    <label for="comics">Des Comics</label>
+                    <input type="radio" id="tout">
+                    <label for="tout">De Tout</label>
+                  </div>
                   <label for="message"><h3>Message</h3></label>
                   <textarea id="message" name="message" placeholder="Laissez un commentaire pour la communauté" required></textarea><br>
                   <input type="submit" value="CONFIRMER">

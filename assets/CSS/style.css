@@ -7,8 +7,8 @@
     --black-light:#0d0e09;
     --gradient-white:#eddebf86;
     --gradient-blue:#19587d;
-    --gradient-red:#8900092a;
-    --grey-color:#888383d3;
+    --gradient-red:#610c0cc2;
+    --grey-color:#535151e8;
     --black-color:#000000;
     --white-color:#ffffff;
 }
@@ -156,6 +156,7 @@ header {
 }
 .photo {
     margin-top: 40px;
+    width: 100%;
 }
 .figure h3 {
     font-family: 'rajdhani';
@@ -169,22 +170,35 @@ header {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    height: 60%;
+    margin: 40px auto;
     padding: 40px;
 }
 .multi-texte {
     width: 50%;
     padding: 20px;
     background: linear-gradient(80deg, var(--gradient-white), var(--gradient-blue));
-    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .multi-content {
     display: flex;
     justify-content: center;
 }
+.multi-texte p {
+    font-size: 13px;
+}
 #multimedia {
     padding: 40px;
     margin: 40px;
+}
+.multi-texte h3 {
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.multi-texte .jaune {
+    color: var(--yellow-color);
 }
 .fleche-2 {
     height: 30%;
@@ -196,8 +210,8 @@ header {
 /*style du formulaire*/
 
 #formulaire {
-    background-color: var(--grey-color);
-    height: 600px;
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradient-blue));
+    height: 650px;
     text-align: justify center;
     padding: 30px 300px;
 }
@@ -215,6 +229,58 @@ header {
 #formulaire .simple {
     padding-bottom: 20px;
 }
+/*style input du formulaire*/
+#email, #message {
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-bottom: 1px solid var(--grey-color);
+    width: 80%;
+    padding: 10px 0;
+}
+#formulaire .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+#formulaire .label-simp {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--grey-color);
+    width: 80%;
+    color: var(--grey-color);
+}
+::placeholder {
+    color: var(--grey-color);
+    font-size: 15px;
+}
+.btn-groupe {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btn-groupe input {
+    opacity: 0;
+}
+.btn-groupe label {
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(60deg,var(--gradient-white),var(--gradient-blue)) 1;
+    font-size: 20px;
+}
+input[type='submit'] {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+    background: linear-gradient(60deg,var(--gradient-white),var(--gradient-red));
+}
+#formulaire .simple {
+    color: var(--grey-color);
+}
+
 /*style du citation*/
 
 .citation {
